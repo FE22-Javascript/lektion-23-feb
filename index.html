@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Doggy Daycare</title>
 </head>
+
 <body>
-    <header><h1>VÄLKOMMEN</h1>
-    <h2>Doggy Daycare</h2></header>
-<main>
-    <section>
-        <form>
-            <label for="search-dog">Sök hund</label>
-            <input id="search-dog" type="text">
-            <input type="button" value="SÖK">
-        </form>
-    </section>
-    <section class="dogs-container">
-        
-    </section>
-</main>
+    <header>
+        <h1>VÄLKOMMEN</h1>
+        <h2>Doggy Daycare</h2>
+    </header>
+    <main>
+
+        <section class="dog-overlay">
+            <article>
+                <h2 class="dog-name"></h2>
+                <h3 class="dog-breed"></h3>
+                <p class="dog-owner"></p>
+            </article>
+            <article>
+                <button class="pagination-btn--prev">Tidigare</button>
+                <button class="pagination-btn--next">Nästa</button>
+            </article>
+        </section>
+
+        <section>
+            <form>
+                <label for="search-dog">Sök hund</label>
+                <input id="search-dog" type="text">
+                <input type="button" value="SÖK">
+            </form>
+        </section>
+        <section class="dogs-container">
+
+        </section>
+    </main>
     <script src="./script.js"></script>
 </body>
+
 </html>
